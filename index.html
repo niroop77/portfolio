@@ -14,15 +14,19 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
 
-  <!-- Icons -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Niroop Kumar</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
@@ -41,72 +45,63 @@
   </nav>
 
   <!-- Hero -->
-  <!-- Hero -->
-<header id="home" class="hero">
-  <div id="particles-js"></div>
-  <div class="container hero-container">
-    <div class="row align-items-center">
-      <!-- Left Image -->
-      <div class="col-md-5 text-center mb-4 mb-md-0">
-        <div class="hero-img-wrapper" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.4">
-          <img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
-        </div>
-      </div>
-
-      <!-- Right Text -->
-      <div class="col-md-7 text-md-start text-center hero-content">
-        <h1>Hi, I'm <span>Niroop Kumar</span></h1>
-        <p class="lead">A developer driven by creativity, logic, and innovation.</p>
-        <h4 class="typed-line mt-3">I'm a <span class="typed-text"></span></h4>
-        <div class="socialmedia mt-4">
-          <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
-          <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
-          <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank"><i class="bi bi-instagram social-links"></i></a>
-        <a href="https://www.facebook.com/niroop.kum" target="_blank "><i class="bi bi-facebook text-white social-links"></i></a>
-        </div>
-        <a href="#" class="btn btn-primary mt-4">Download CV</a>
-        <div class="socialmedia mt-4">
-          <a href="mailto:niroopkumar.u@gmail.com" target="_blank" class="text-decoration-none text-white"><i class="bi bi-envelope-fill social-links-1 text-white"><span class="text-white mx-2">niroopkumar.u@gmail.com</span></i></a>
-          <a href="tel:+4733378901" target="_blank" class="text-decoration-none text-white"><i class="bi bi-telephone-fill social-links-1 text-white"><span class="text-white mx-2">+91 9182831712</span></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-  <!-- About -->
-  <section id="about" class="aboutme">
-    <div class="container text-center">
-      <h2>About <span>Me</span></h2>
-      <div class="row justify-content-center align-items-center mt-5">
-        <div class="col-md-8 text-start">
-          <div class="glass-card p-4">
-            <h3>Frontend Developer</h3>
-            <p class="mt-3">I'm <strong>Niroop Kumar</strong>— a passionate <strong>Frontend Developer</strong> with over 
-    <strong>5 years of experience</strong> in building responsive and high-performing web interfaces. 
-    I started my career as a <strong>WordPress Developer</strong> and later moved into frontend development, 
-    delivering more than <strong>5000 landing pages</strong> using various client-specific tools and technologies.
-  </p>
-  <p>
-    Skilled in <strong>HTML5, CSS3, JavaScript, Bootstrap, WordPress</strong>, and <strong>Canva</strong>, 
-    I enjoy creating clean, visually appealing, and user-friendly designs. 
-    I hold a <strong>Bachelor’s degree in ECE</strong> from <strong>JNTU Kakinada</strong> and love exploring 
-    new web technologies to bring innovative ideas to life.
-  </p>
-  <p>
-    Let’s connect and create something extraordinary together!
-  </p></p>
+  <header id="home" class="hero">
+    <div id="particles-js"></div>
+    <div class="container hero-container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-img-wrapper" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.4">
+            <img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
           </div>
         </div>
-        <div class="col-md-4 mb-4 mb-md-0">
-          <img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
+        <div class="col-md-7 text-md-start text-center hero-content" data-aos="fade-left" data-aos-duration="1000">
+          <h1>Hi, I'm <span>Niroop Kumar</span></h1>
+          <p class="lead">A developer driven by creativity, logic, and innovation.</p>
+          <h4 class="typed-line mt-3">I'm a <span class="typed-text"></span></h4>
+          <div class="socialmedia mt-4">
+            <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
+            <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
+            <a href="https://www.instagram.com/niroopkumar" target="_blank"><i class="bi bi-instagram social-links"></i></a>
+            <a href="https://www.facebook.com/niroop.kum" target="_blank"><i class="bi bi-facebook text-white social-links"></i></a>
+          </div>
+          <a href="#" class="btn btn-primary mt-4">Download CV</a>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
+  <!-- About -->
+   <section id="about" class="aboutme" data-aos="fade-up">
+<div class="container text-center">
+<h2>About <span>Me</span></h2>
+<div class="row justify-content-center align-items-center mt-5">
+<div class="col-md-8 text-start">
+<div class="glass-card p-4">
+<h3>Frontend Developer</h3>
+<p class="mt-3">I'm <strong>Niroop Kumar</strong>— a passionate <strong>Frontend Developer</strong> with over
+<strong>5 years of experience</strong> in building responsive and high-performing web interfaces.
+I started my career as a <strong>WordPress Developer</strong> and later moved into frontend development,
+delivering more than <strong>5000 landing pages</strong> using various client-specific tools and technologies.
+</p>
+<p>
+Skilled in <strong>HTML5, CSS3, JavaScript, Bootstrap, WordPress</strong>, and <strong>Canva</strong>,
+I enjoy creating clean, visually appealing, and user-friendly designs.
+I hold a <strong>Bachelor’s degree in ECE</strong> from <strong>JNTU Kakinada</strong> and love exploring
+new web technologies to bring innovative ideas to life.
+</p>
+<p>
+Let’s connect and create something extraordinary together!
+</p></p>
+</div>
+</div>
+<div class="col-md-4 mt-2 mb-md-0 img-mob">
+<img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
+</div>
+</div>
+</div>
+</section>
   <!-- Skills -->
-  <section id="skills" class="skills text-center">
+  <section id="skills" class="skills text-center" data-aos="fade-up">
     <div class="container">
       <h2>My <span>Skills</span></h2>
       <div class="row mt-5 g-4">
@@ -117,95 +112,42 @@
       </div>
     </div>
   </section>
-<!--Projects-->
-<!-- Projects -->
-<section id="projects" class="projects text-center">
-<div class="container">
-<h2>Latest <span>Projects</span></h2>
-<div class="row mt-5 g-4">
-<div class="col-md-4">
-<div class="glass-card">
-<img src="images/Interio-project.png" class="img-fluid rounded mb-3" alt="">
-<h5>Interior Website</h5>
-<p>Interior Website built with Bootstrap, CSS & JS </p>
-<a href="https://interior-project-six.vercel.app/" class="btn btn-outline-primary">View Project</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="glass-card">
-<img src="images/College-project.png" class="img-fluid rounded mb-3" alt="">
-<h5>College Website</h5>
-<p>Interactive academic Website built with HTML, CSS & JS</p>
-<a href="https://college-website-three-tan.vercel.app/" class="btn btn-outline-primary">View Project</a>
-</div>
-</div>
-<div class="col-md-4">
-<div class="glass-card">
-<img src="images/Business-project.png" class="img-fluid rounded mb-3" alt="">
-<h5>Business Website</h5>
-<p>Business Website built with Bootstrap, CSS & JS </p>
-<a href="https://bootstrap-project-five-alpha.vercel.app/" class="btn btn-outline-primary">View Project</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-  <!-- Projects with overlay
-  <section id="projects" class="projects-section">
-  <div class="container text-center">
-    <h2 class="section-title">Latest <span>Projects</span></h2>
 
-    <div class="projects-grid">
-      
-      <!-- Interior Website 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/Interio-project.png" alt="Interior Website">
+  <!-- Projects -->
+  <section id="projects" class="projects text-center">
+    <div class="container">
+      <h2 data-aos="fade-up">Latest <span>Projects</span></h2>
+      <div class="row mt-5 g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="glass-card">
+            <img src="images/Interio-project.png" class="img-fluid rounded mb-3" alt="">
+            <h5>Interior Website</h5>
+            <p>Built with Bootstrap, CSS & JS</p>
+            <a href="https://interior-project-six.vercel.app/" class="btn btn-outline-primary">View Project</a>
+          </div>
         </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <h3>Elegant Living Spaces</h3>
-            <p>Modern Interior Website</p>
-            <a href="https://interior-project-six.vercel.app/" target="_blank" class="project-btn">View Project</a>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass-card">
+            <img src="images/College-project.png" class="img-fluid rounded mb-3" alt="">
+            <h5>College Website</h5>
+            <p>Interactive academic Website</p>
+            <a href="https://college-website-three-tan.vercel.app/" class="btn btn-outline-primary">View Project</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="glass-card">
+            <img src="images/Business-project.png" class="img-fluid rounded mb-3" alt="">
+            <h5>Business Website</h5>
+            <p>Built with Bootstrap, CSS & JS</p>
+            <a href="https://bootstrap-project-five-alpha.vercel.app/" class="btn btn-outline-primary">View Project</a>
           </div>
         </div>
       </div>
-
-      <!-- College Website 
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/College-project.png" alt="College Website">
-        </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <h3>World’s Biggest University</h3>
-            <p>EduVerse College Portal</p>
-            <a href="https://college-website-three-tan.vercel.app/" target="_blank" class="project-btn">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Business Website
-      <div class="project-card">
-        <div class="project-image">
-          <img src="images/Business-project.png" alt="Business Website">
-        </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <h3>Digital Technology Agency</h3>
-            <p>Nova Business Solutions</p>
-            <a href="https://bootstrap-project-five-alpha.vercel.app/" target="_blank" class="project-btn">View Project</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
--->
+  </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact text-center">
+  <section id="contact" class="contact text-center" data-aos="fade-up">
     <div class="container">
       <h2>Contact <span>Me</span></h2>
       <p class="mt-3">Let's collaborate or just say hello 👋</p>
@@ -225,22 +167,22 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-up">
     <p>© 2025 Niroop Kumar Ulavala. All rights reserved.</p>
-   <div class="socialmedia mt-4">
-          <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
-          <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
-          <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank"><i class="bi bi-instagram social-links"></i></a>
-        <a href="https://www.facebook.com/niroop.kum" target="_blank "><i class="bi bi-facebook text-white social-links"></i></a>
-        </div>
+    <div class="socialmedia mt-4">
+      <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
+      <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
+      <a href="https://www.instagram.com/niroopkumar" target="_blank"><i class="bi bi-instagram social-links"></i></a>
+    </div>
   </footer>
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
+    // Typed.js
     new Typed(".typed-text", {
       strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
       typeSpeed: 70,
@@ -248,22 +190,15 @@
       loop: true
     });
 
+    // Particles.js
     particlesJS("particles-js", {
-      particles: {
-        number: { value: 60 },
-        color: { value: "#14b8a6" },
-        shape: { type: "circle" },
-        opacity: { value: 0.3 },
-        size: { value: 3 },
-        line_linked: { enable: true, color: "#14b8a6", opacity: 0.4 },
-        move: { enable: true, speed: 1.8 }
-      },
-      interactivity: {
-        events: { onhover: { enable: true, mode: "grab" } },
-        modes: { grab: { distance: 150, line_linked: { opacity: 1 } } }
-      },
+      particles: { number: { value: 60 }, color: { value: "#14b8a6" }, shape: { type: "circle" }, opacity: { value: 0.3 }, size: { value: 3 }, line_linked: { enable: true, color: "#14b8a6", opacity: 0.4 }, move: { enable: true, speed: 1.8 } },
+      interactivity: { events: { onhover: { enable: true, mode: "grab" } }, modes: { grab: { distance: 150, line_linked: { opacity: 1 } } } },
       retina_detect: true
     });
+
+    // Initialize AOS
+    AOS.init({ duration: 1000, once: true });
   </script>
 </body>
 </html>
