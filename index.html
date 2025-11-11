@@ -9,28 +9,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
 
-  <!-- AOS (optional fallback) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Niroop Kumar Ulavala</a>
+      <a class="navbar-brand fw-bold" href="#">Niroop Kumar</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-        <span class="navbar-toggler-icon text-white"><i class="fa-solid fa-bars"></i></span>
+        <span><i class="fa-solid fa-bars text-white"></i></span>
       </button>
       <div id="nav" class="collapse navbar-collapse justify-content-end">
-        <ul class="navbar-nav me-3">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
@@ -42,112 +41,182 @@
   </nav>
 
   <!-- Hero -->
-  <header id="home" class="hero animated-bg">
-    <div id="particles-js"></div>
-    <div class="hero-img-wrapper" data-tilt data-tilt-max="15" data-tilt-glare data-tilt-max-glare="0.4">
-      <img src="images/1.png" alt="Niroop" />
-    </div>
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Niroop Kumar</span></h1>
-      <p>A developer driven by creativity, code, and the pursuit of innovation.</p>
-      <h4 class="mt-3">I'm a <span class="typed-text"></span></h4>
-      <div class="socialmedia my-3">
+  <!-- Hero -->
+<header id="home" class="hero">
+  <div id="particles-js"></div>
+  <div class="container hero-container">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <div class="hero-img-wrapper" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.4">
+          <img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
+        </div>
+      </div>
+
+      <!-- Right Text -->
+      <div class="col-md-7 text-md-start text-center hero-content">
+        <h1>Hi, I'm <span>Niroop Kumar</span></h1>
+        <p class="lead">A developer driven by creativity, logic, and innovation.</p>
+        <h4 class="typed-line mt-3">I'm a <span class="typed-text"></span></h4>
+        <div class="socialmedia mt-4">
+          <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
+          <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
+          <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank"><i class="bi bi-instagram social-links"></i></a>
         <a href="https://www.facebook.com/niroop.kum" target="_blank "><i class="bi bi-facebook text-white social-links"></i></a>
-        <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github text-white social-links"></i></a>
-        <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin text-white social-links"></i></a>
-        <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank "><i class="bi bi-instagram text-white social-links"></i></a>
-      </div>
-      <a href="#" class="btn btn-light mt-4">Download CV</a>
-      <div class="row home-media mt-4 ms-5">
-        <div class="col mail d-flex">
-          <i class="bi bi-envelope-fill me-2 fs-5 mx-2"></i>
-          <a href="mailto:niroopkumar.u@gmail.com" class="text-decoration-none fs-5 text-white">niroopkumar.u@gmail.com</a>
         </div>
-        <div class="col phone d-flex">
-          <i class="bi bi-telephone-fill me-2 fs-5 mx-2"></i>
-          <a href="tel:" class="text-decoration-none fs-5 text-white">+91 9182831712</a>
+        <a href="#" class="btn btn-primary mt-4">Download CV</a>
+        <div class="socialmedia mt-4">
+          <a href="mailto:niroopkumar.u@gmail.com" target="_blank" class="text-decoration-none text-white"><i class="bi bi-envelope-fill social-links-1 text-white"><span class="text-white mx-2">niroopkumar.u@gmail.com</span></i></a>
+          <a href="tel:+4733378901" target="_blank" class="text-decoration-none text-white"><i class="bi bi-telephone-fill social-links-1 text-white"><span class="text-white mx-2">+91 9182831712</span></i></a>
         </div>
       </div>
     </div>
-    
-  </header>
+  </div>
+</header>
+
   <!-- About -->
   <section id="about" class="aboutme">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5 reveal">
-          <img src="images/1.png" class="img-fluid rounded-circle shadow img-about" alt="About" />
-        </div>
-        <div class="col-md-7 reveal">
-          <div class="glass-card">
-            <h2>About <span>Me</span></h2>
+    <div class="container text-center">
+      <h2>About <span>Me</span></h2>
+      <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-md-8 text-start">
+          <div class="glass-card p-4">
             <h3>Frontend Developer</h3>
-            <p>I'm <strong>Niroop Kumar Ulavala</strong>, a full-stack developer who builds interactive, dynamic web apps with clean UI and smooth UX. I love combining creativity with logic to craft engaging digital products.</p>
+            <p class="mt-3">I'm <strong>Niroop Kumar</strong>— a passionate <strong>Frontend Developer</strong> with over 
+    <strong>5 years of experience</strong> in building responsive and high-performing web interfaces. 
+    I started my career as a <strong>WordPress Developer</strong> and later moved into frontend development, 
+    delivering more than <strong>5000 landing pages</strong> using various client-specific tools and technologies.
+  </p>
+  <p>
+    Skilled in <strong>HTML5, CSS3, JavaScript, Bootstrap, WordPress</strong>, and <strong>Adobe Photoshop</strong>, 
+    I enjoy creating clean, visually appealing, and user-friendly designs. 
+    I hold a <strong>Bachelor’s degree in ECE</strong> from <strong>JNTU Kakinada</strong> and love exploring 
+    new web technologies to bring innovative ideas to life.
+  </p>
+  <p>
+    Let’s connect and create something extraordinary together!
+  </p></p>
           </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <img src="images/1.png" class="img-fluid rounded-circle shadow-lg img-about" alt="About" />
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills">
-    <div class="container text-center">
-      <h2 class="reveal">My <span>Skills</span></h2>
+  <section id="skills" class="skills text-center">
+    <div class="container">
+      <h2>My <span>Skills</span></h2>
       <div class="row mt-5 g-4">
-        <div class="col-md-3 col-6 reveal" data-tilt><i class="fab fa-html5 fa-3x text-danger"></i><p>HTML5</p></div>
-        <div class="col-md-3 col-6 reveal" data-tilt><i class="fab fa-css3-alt fa-3x text-primary"></i><p>CSS3</p></div>
-        <div class="col-md-3 col-6 reveal" data-tilt><i class="fab fa-js fa-3x text-warning"></i><p>JavaScript</p></div>
-        <div class="col-md-3 col-6 reveal" data-tilt><i class="fab fa-react fa-3x text-info"></i><p>React.js</p></div>
+        <div class="col-md-3 col-6"><i class="fab fa-html5 text-danger fa-3x"></i><p>HTML5</p></div>
+        <div class="col-md-3 col-6"><i class="fab fa-css3-alt text-primary fa-3x"></i><p>CSS3</p></div>
+        <div class="col-md-3 col-6"><i class="fab fa-js text-warning fa-3x"></i><p>JavaScript</p></div>
+        <div class="col-md-3 col-6"><i class="fab fa-react text-info fa-3x"></i><p>React.js</p></div>
       </div>
     </div>
   </section>
+<!--Projects-->
+<!-- Projects -->
+<section id="projects" class="projects text-center">
+<div class="container">
+<h2>Latest <span>Projects</span></h2>
+<div class="row mt-5 g-4">
+<div class="col-md-4">
+<div class="glass-card">
+<img src="images/Interio-project.png" class="img-fluid rounded mb-3" alt="">
+<h5>Interior Website</h5>
+<p>Interior Website built with Bootstrap, CSS & JS </p>
+<a href="https://interior-project-six.vercel.app/" class="btn btn-outline-primary">View Project</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass-card">
+<img src="images/College-project.png" class="img-fluid rounded mb-3" alt="">
+<h5>College Website</h5>
+<p>Interactive academic Website built with HTML, CSS & JS</p>
+<a href="https://college-website-three-tan.vercel.app/" class="btn btn-outline-primary">View Project</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="glass-card">
+<img src="images/Business-project.png" class="img-fluid rounded mb-3" alt="">
+<h5>Business Website</h5>
+<p>Business Website built with Bootstrap, CSS & JS </p>
+<a href="https://bootstrap-project-five-alpha.vercel.app/" class="btn btn-outline-primary">View Project</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <!-- Projects with overlay
+  <section id="projects" class="projects-section">
+  <div class="container text-center">
+    <h2 class="section-title">Latest <span>Projects</span></h2>
 
-  <!-- Projects -->
-  <section id="projects" class="l-pojects">
-    <div class="container text-center">
-      <h2 class="reveal">Latest <span>Projects</span></h2>
-      <div class="row mt-5 g-4">
-        <div class="col-md-4 reveal">
-          <div class="glass-card" data-tilt>
-            <img src="images/Interio-project.png" class="img-fluid rounded mb-3" alt="">
-            <h5>Interior Website</h5>
-            <p>Responsive site with particles, tilt cards, and dark mode.</p>
-            <a href="https://interior-project-six.vercel.app/" class="btn btn-outline-primary">View Project</a>
-          </div>
+    <div class="projects-grid">
+      
+      <!-- Interior Website 
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/Interio-project.png" alt="Interior Website">
         </div>
-        <div class="col-md-4 reveal">
-          <div class="glass-card" data-tilt>
-            <img src="images/College-project.png" class="img-fluid rounded mb-3" alt="">
-            <h5>College Webbsite</h5>
-            <p>Interactive analytics dashboard built with Bootstrap & Chart.js.</p>
-            <a href="https://college-website-three-tan.vercel.app/" class="btn btn-outline-primary">View Project</a>
-          </div>
-        </div>
-        <div class="col-md-4 reveal">
-          <div class="glass-card" data-tilt>
-            <img src="images/Business-project.png" class="img-fluid rounded mb-3" alt="">
-            <h5>Business Website</h5>
-            <p>Real-time messaging with Node.js and Socket.io integration.</p>
-            <a href="https://bootstrap-project-five-alpha.vercel.app/" class="btn btn-outline-primary">View Project</a>
+        <div class="project-overlay">
+          <div class="project-info">
+            <h3>Elegant Living Spaces</h3>
+            <p>Modern Interior Website</p>
+            <a href="https://interior-project-six.vercel.app/" target="_blank" class="project-btn">View Project</a>
           </div>
         </div>
       </div>
+
+      <!-- College Website 
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/College-project.png" alt="College Website">
+        </div>
+        <div class="project-overlay">
+          <div class="project-info">
+            <h3>World’s Biggest University</h3>
+            <p>EduVerse College Portal</p>
+            <a href="https://college-website-three-tan.vercel.app/" target="_blank" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Website
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/Business-project.png" alt="Business Website">
+        </div>
+        <div class="project-overlay">
+          <div class="project-info">
+            <h3>Digital Technology Agency</h3>
+            <p>Nova Business Solutions</p>
+            <a href="https://bootstrap-project-five-alpha.vercel.app/" target="_blank" class="project-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+-->
 
   <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="container text-center">
-      <h2 class="reveal">Contact Me</h2>
-      <p>Let's collaborate or just say hello 👋</p>
-      <div class="row justify-content-center">
-        <div class="col-md-6 reveal">
+  <section id="contact" class="contact text-center">
+    <div class="container">
+      <h2>Contact <span>Me</span></h2>
+      <p class="mt-3">Let's collaborate or just say hello 👋</p>
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
           <div class="glass-card">
             <form>
               <input type="text" class="form-control mb-3" placeholder="Your Name" required />
               <input type="email" class="form-control mb-3" placeholder="Your Email" required />
               <textarea class="form-control mb-3" rows="4" placeholder="Your Message" required></textarea>
-              <button type="submit" class="btn btn-dark w-100">Send Message</button>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
             </form>
           </div>
         </div>
@@ -155,38 +224,46 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Niroop Kumar Ulavala. All rights reserved.</p>
-    <div class="socialmedia my-3">
+   <div class="socialmedia mt-4">
+          <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github social-links"></i></a>
+          <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank"><i class="bi bi-linkedin social-links"></i></a>
+          <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank"><i class="bi bi-instagram social-links"></i></a>
         <a href="https://www.facebook.com/niroop.kum" target="_blank "><i class="bi bi-facebook text-white social-links"></i></a>
-        <a href="https://github.com/niroop77" target="_blank"><i class="bi bi-github text-white social-links"></i></a>
-        <a href="https://www.linkedin.com/in/niroop-kumar-8bba2a146?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin text-white social-links"></i></a>
-        <a href="https://www.instagram.com/niroopkumar?igsh=MTZxY2h0cHNmenA0ag==" target="_blank "><i class="bi bi-instagram text-white social-links"></i></a>
-      </div>
+        </div>
   </footer>
 
-  <!-- JS Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <script>
-    // Typing
-    new Typed(".typed-text",{strings:["Frontend Developer","UI/UX Desiner","Web Developer"],typeSpeed:70,backSpeed:40,loop:true});
+    new Typed(".typed-text", {
+      strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
+      typeSpeed: 70,
+      backSpeed: 40,
+      loop: true
+    });
 
-    // Particles
-    particlesJS("particles-js",{particles:{number:{value:70},color:{value:"#38bdf8"},shape:{type:"circle"},
-      opacity:{value:0.4},size:{value:3},line_linked:{enable:true,color:"#38bdf8",opacity:0.4,width:1},
-      move:{enable:true,speed:2}},
-      interactivity:{events:{onhover:{enable:true,mode:"grab"},onclick:{enable:true,mode:"push"}},
-      modes:{grab:{distance:150,line_linked:{opacity:1}},push:{particles_nb:4}}},retina_detect:true});
-
-    // GSAP Scroll Animations
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".reveal",{scrollTrigger:".reveal",opacity:0,y:80,duration:1,stagger:0.2});
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#14b8a6" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 3 },
+        line_linked: { enable: true, color: "#14b8a6", opacity: 0.4 },
+        move: { enable: true, speed: 1.8 }
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "grab" } },
+        modes: { grab: { distance: 150, line_linked: { opacity: 1 } } }
+      },
+      retina_detect: true
+    });
   </script>
 </body>
 </html>
