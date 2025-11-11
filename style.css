@@ -471,6 +471,9 @@ section span {
     padding: 50px 20px;
     height: auto;
   }
+  .btn-m{
+    margin: 5px 0px !important;
+  }
   .hero-img-wrapper {
     width: 250px;
     height: 250px;
