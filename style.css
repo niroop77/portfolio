@@ -187,7 +187,6 @@ section span {
 /* Contact */
 /* Contact Section */
 .contact {
-  background: var(--bg-dark);
   color: var(--text);
 }
 
@@ -246,7 +245,9 @@ section span {
   background: var(--primary-hover);
   transform: translateY(-3px);
 }
-
+a{
+  text-decoration: none !important;
+}
 
 /* Footer */
 .footer {
@@ -267,6 +268,11 @@ section span {
   margin: 10px 10px;
   color: #14b8a6;
   transition: color 0.3s;
+  text-decoration: none !important;
+}
+.contact-1{
+text-decoration: none !important;
+font-size: 18px !important;
 }
 .social-links-1:hover {
   color: var(--primary);
@@ -587,4 +593,45 @@ section span {
     width: 180px;
     height: 180px;
   }
+}
+input::placeholder:hover {
+  color: white !important;
+}
+
+/* For specific input fields, you can use a more specific selector */
+.my-custom-input::placeholder:hover {
+  color: white !important;
+}
+.btn-teal {
+    background: #1abc9c;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.phone-box {
+    gap: 6px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.phone-icon {
+    font-size: 1.2rem;
+    color: #1abc9c;
+}
+
+.country {
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.number {
+    letter-spacing: 1px;
+}
+
+/* Make layout tighter on very small screens */
+@media (max-width: 420px) {
+    .phone-box {
+        font-size: 1rem;
+    }
 }
