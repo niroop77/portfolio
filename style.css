@@ -290,9 +290,6 @@ font-size: 18px !important;
   margin-bottom: 70px;
   color: #e2e8f0;
 }
-.section-title span {
-  color: #38bdf8;
-}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -382,7 +379,7 @@ font-size: 18px !important;
 .project-btn {
   display: inline-block;
   padding: 10px 22px;
-  background: #38bdf8;
+  background: #14b8a6;
   color: #0f172a;
   font-weight: 600;
   border-radius: 50px;
@@ -634,4 +631,8 @@ input::placeholder:hover {
     .phone-box {
         font-size: 1rem;
     }
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background-color: #1abc9c !important;
+  border-color:#1abc9c !important;
 }
