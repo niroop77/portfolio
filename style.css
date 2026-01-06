@@ -1,3 +1,6 @@
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
 :root {
   --primary: #14b8a6;
   --primary-hover: #0d9488;
@@ -8,15 +11,25 @@
   --border-glass: rgba(255, 255, 255, 0.15);
 }
 
+/* =========================================================
+   BASE
+========================================================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg-dark);
   color: var(--text);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  padding-top: 50px;
 }
 
-/* ================= NAVBAR ================= */
+/* =========================================================
+   NAVBAR
+========================================================= */
 .navbar {
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(10px);
@@ -33,13 +46,17 @@ body {
   color: #e2e8f0 !important;
   font-weight: 500;
   margin-left: 15px;
+  transition: color 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--primary) !important;
 }
 
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -68,7 +85,7 @@ body {
   border: 4px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   margin: 0 auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
 }
 
 .hero-img-wrapper:hover {
@@ -94,6 +111,9 @@ body {
   opacity: 0.9;
 }
 
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
 .social-links {
   font-size: 1.6rem;
   margin: 0 10px;
@@ -105,13 +125,15 @@ body {
   color: var(--primary-hover);
 }
 
-/* ================= BUTTONS ================= */
+/* =========================================================
+   BUTTONS
+========================================================= */
 .btn-primary {
   background: var(--primary);
   border: none;
   border-radius: 30px;
   padding: 10px 25px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -124,9 +146,28 @@ body {
   color: #fff;
   border-radius: 25px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-/* ================= SECTIONS ================= */
+.btn-teal:hover {
+  border-radius: 999px;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-shadow: 0 10px 30px rgba(20, 184, 166, 0.45);
+}
+
+.btn-teal:active {
+  transform: scale(0.96);
+}
+
+.btn-teal:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.4);
+}
+
+/* =========================================================
+   SECTIONS
+========================================================= */
 section {
   padding: 100px 0;
 }
@@ -140,9 +181,43 @@ section span {
   color: var(--primary);
 }
 
-/* ================= ABOUT ================= */
+/* =========================================================
+   ABOUT
+========================================================= */
 .aboutme {
   background: var(--bg-light);
+}
+
+.aboutme h3 {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.aboutme h3::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+.aboutme p {
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.about-highlights {
+  padding-left: 18px;
+  margin: 10px 0 16px;
+}
+
+.about-highlights li {
+  margin-bottom: 6px;
+  font-size: 15px;
+  opacity: 0.9;
 }
 
 .img-about {
@@ -152,21 +227,26 @@ section span {
   object-fit: cover;
 }
 
+/* =========================================================
+   GLASS CARD
+========================================================= */
 .glass-card {
   background: var(--glass);
   border: 1px solid var(--border-glass);
   border-radius: 15px;
   padding: 25px;
   backdrop-filter: blur(15px);
-  transition: 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
 }
 
-/* ================= SKILLS ================= */
+/* =========================================================
+   SKILLS
+========================================================= */
 .skills {
   background: var(--bg-dark);
 }
@@ -176,7 +256,9 @@ section span {
   margin-bottom: 10px;
 }
 
-/* ================= PROJECTS ================= */
+/* =========================================================
+   PROJECTS
+========================================================= */
 .projects {
   background: var(--bg-light);
 }
@@ -185,11 +267,9 @@ section span {
   border-radius: 10px;
 }
 
-/* ================= CONTACT ================= */
-.contact {
-  color: var(--text);
-}
-
+/* =========================================================
+   CONTACT
+========================================================= */
 .contact p.lead {
   color: #cbd5e1;
 }
@@ -207,7 +287,63 @@ section span {
   box-shadow: 0 0 10px rgba(20, 184, 166, 0.4);
 }
 
-/* ================= FOOTER ================= */
+/* Placeholder color */
+.contact .form-control::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+/* =========================================================
+   PHONE
+========================================================= */
+.phone-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.phone-icon {
+  color: #1abc9c;
+}
+
+/* =========================================================
+   SCROLL TO TOP
+========================================================= */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  box-shadow: 0 10px 25px rgba(20, 184, 166, 0.45);
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollTopBtn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
 .footer {
   background: #0f172a;
   padding: 30px 0;
@@ -224,400 +360,81 @@ section span {
   color: var(--primary-hover);
 }
 
-/* ================= PHONE ================= */
-.phone-box {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 1.2rem;
-  color: white;
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+.breadcrumb {
+  font-size: 14px;
 }
 
-.phone-icon {
-  color: #1abc9c;
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
 }
 
-/* ================= RESPONSIVE ================= */
+.breadcrumb .active {
+  color: #aaa;
+}
+
+/* =========================================================
+   RESPONSIVE (MOBILE & TABLET)
+========================================================= */
 @media (max-width: 992px) {
-  .hero {
-    padding: 60px 20px;
-    min-height: auto;
-    text-align: center;
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 
   .hero-img-wrapper {
     width: 250px;
     height: 250px;
-    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+
+  .hero {
+    padding: 60px 15px 50px;
+    text-align: center;
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 30px;
+  }
+
+  .glass-card {
+    padding: 20px;
+  }
+
+  .img-about {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .phone-box {
+    justify-content: center;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 576px) {
-  section {
-    padding: 60px 15px;
+  .hero-content h1 {
+    font-size: 2rem;
   }
 
   .hero-img-wrapper {
     width: 180px;
     height: 180px;
   }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
 }
-/* Force white placeholder text in contact form */
-.contact .form-control::placeholder {
-  color: #ffffff !important;
-  opacity: 0.5;
+.skills-1{
+    background-color: #1e293b !important;
 }
-
-.contact .form-control::-webkit-input-placeholder {
-  color: #ffffff !important;
+.projects-1{
+  background-color: #1e293b !important;  
 }
-
-.contact .form-control:-ms-input-placeholder {
-  color: #ffffff !important;
+.contact-1{
+    background-color: #1e293b !important;
 }
-
-.contact .form-control::-ms-input-placeholder {
-  color: #ffffff !important;
-}
-/* ===============================
-   Mobile Responsive - About Section
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Section padding */
-  #about {
-    padding: 50px 15px;
-  }
-
-  /* Heading */
-  #about h2 {
-    font-size: 28px;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  #about h2 span {
-    font-size: 28px;
-  }
-
-  /* Card alignment */
-  #about .glass-card {
-    padding: 20px;
-    text-align: left;
-  }
-
-  /* Role title */
-  #about h3 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  /* Paragraph text */
-  #about p {
-    font-size: 14.5px;
-    line-height: 1.7;
-    margin-bottom: 12px;
-  }
-
-  /* Strong text emphasis */
-  #about p strong {
-    font-size: 15px;
-  }
-
-  /* Last CTA line */
-  #about p:last-child {
-    font-size: 15px;
-    text-align: center;
-    margin-top: 16px;
-  }
-
-  /* Image column spacing */
-  .img-mob {
-    margin-top: 25px;
-    text-align: center;
-  }
-
-}
-/* ===============================
-   Mobile Responsive - Projects
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Section padding */
-  #projects {
-    padding: 50px 15px;
-  }
-
-  /* Section heading */
-  #projects h2 {
-    font-size: 28px;
-    line-height: 1.3;
-    margin-bottom: 10px;
-  }
-
-  #projects h2 span {
-    font-size: 28px;
-  }
-
-  /* Project cards */
-  #projects .glass-card {
-    padding: 18px;
-    text-align: center;
-  }
-
-  /* Project image */
-  #projects img {
-    width: 100%;
-    max-height: 180px;
-    object-fit: cover;
-    margin-bottom: 12px;
-  }
-
-  /* Project title */
-  #projects h5 {
-    font-size: 18px;
-    margin-bottom: 6px;
-  }
-
-  /* Project description */
-  #projects p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 12px;
-  }
-
-  /* Buttons alignment */
-  #projects .btn {
-    font-size: 13px;
-    padding: 6px 12px;
-    margin: 6px 4px;
-    width: 100%;
-  }
-
-  /* Space between cards */
-  #projects .col-md-4 {
-    margin-bottom: 15px;
-  }
-
-}
-/* ===============================
-   Mobile Responsive - Contact
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Section padding */
-  #contact {
-    padding: 50px 15px;
-  }
-
-  /* Heading */
-  #contact h2 {
-    font-size: 28px;
-    line-height: 1.3;
-    margin-bottom: 10px;
-  }
-
-  #contact h2 span {
-    font-size: 28px;
-  }
-
-  /* Subtitle text */
-  #contact .lead {
-    font-size: 14.5px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-  }
-
-  /* Glass cards */
-  #contact .glass-card {
-    padding: 20px;
-    text-align: left;
-  }
-
-  /* Contact titles */
-  #contact h5 {
-    font-size: 16px;
-    line-height: 1.4;
-  }
-
-  /* Phone number */
-  #contact p.fs-5 {
-    font-size: 16px !important;
-  }
-
-  /* Email text */
-  #contact p.fs-6 {
-    font-size: 14.5px;
-    word-break: break-word;
-  }
-
-  /* Buttons */
-  #contact .btn {
-    font-size: 13px;
-    padding: 6px 14px;
-  }
-
-  /* Form labels */
-  #contact .form-label {
-    font-size: 13px;
-  }
-
-  /* Form inputs */
-  #contact .form-control {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-  /* Stack form buttons */
-  #contact .col-12.text-end {
-    text-align: center !important;
-  }
-
-  #contact button[type="submit"] {
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  /* Space between left cards */
-  #contact .col-md-5 .glass-card {
-    margin-bottom: 15px;
-  }
-
-}
-/* ===============================
-   Mobile Responsive - Footer
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Footer container */
-  .footer {
-    padding: 30px 15px;
-    text-align: center;
-  }
-
-  /* Copyright text */
-  .footer p {
-    font-size: 13px;
-    line-height: 1.6;
-    margin-bottom: 18px;
-  }
-
-  /* Social icons wrapper */
-  .footer .socialmedia {
-    margin-top: 10px;
-  }
-
-  /* Social links */
-  .footer .socialmedia a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    margin: 6px;
-  }
-
-  /* Icons size */
-  .footer .social-links {
-    font-size: 20px;
-  }
-
-}
-/* ===============================
-   Mobile Responsive - Hero Section
-   =============================== */
-@media (max-width: 768px) {
-
-  /* Hero section spacing */
-  .hero {
-    padding: 60px 15px 50px;
-  }
-
-  /* Center content on mobile */
-  .hero-content {
-    text-align: center;
-  }
-
-  /* Main heading */
-  .hero h1 {
-    font-size: 30px;
-    line-height: 1.25;
-  }
-
-  .hero h1 span {
-    font-size: 30px;
-  }
-
-  /* Subtitle */
-  .hero .lead {
-    font-size: 15px;
-    line-height: 1.6;
-    margin-top: 8px;
-  }
-
-  /* Typed text line */
-  .typed-line {
-    font-size: 18px;
-  }
-
-  .typed-line span {
-    font-size: 18px;
-  }
-
-  /* Social icons */
-  .hero .socialmedia {
-    margin-top: 20px;
-  }
-
-  .hero .socialmedia a {
-    margin: 6px;
-  }
-
-  .hero .social-links {
-    font-size: 20px;
-  }
-
-  /* CTA section spacing */
-  .hero .container.mt-4 {
-    margin-top: 25px !important;
-  }
-
-  /* Download CV button */
-  .hero .btn {
-    font-size: 14px;
-    padding: 8px 18px;
-    width: 100%;
-  }
-
-  /* Phone box */
-  .phone-box {
-    justify-content: center;
-    font-size: 14px;
-  }
-
-  .phone-icon {
-    font-size: 16px;
-    margin-right: 6px;
-  }
-
-  .phone-box .country,
-  .phone-box .number {
-    font-size: 14px;
-  }
-  .img-about{
-    width: 180px !important;
-    height: 180px !important;
-    border: 3px solid var(--primary);
-    object-fit: cover;
-  }
-
-}
-
-
