@@ -438,3 +438,408 @@ section span {
 .contact-1{
     background-color: #1e293b !important;
 }
+/* ===============================
+   Mobile Responsive - About Section
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Section padding */
+  #about {
+    padding: 50px 15px;
+  }
+
+  /* Heading */
+  #about h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  #about h2 span {
+    font-size: 28px;
+  }
+
+  /* Card alignment */
+  #about .glass-card {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Role title */
+  #about h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* Paragraph text */
+  #about p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  /* Strong text emphasis */
+  #about p strong {
+    font-size: 15px;
+  }
+
+  /* Last CTA line */
+  #about p:last-child {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  /* Image column spacing */
+  .img-mob {
+    margin-top: 25px;
+    text-align: center;
+  }
+
+}
+/* ===============================
+   Mobile Responsive - Projects
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Section padding */
+  #projects {
+    padding: 50px 15px;
+  }
+
+  /* Section heading */
+  #projects h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  #projects h2 span {
+    font-size: 28px;
+  }
+
+  /* Project cards */
+  #projects .glass-card {
+    padding: 18px;
+    text-align: center;
+  }
+
+  /* Project image */
+  #projects img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+
+  /* Project title */
+  #projects h5 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  /* Project description */
+  #projects p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* Buttons alignment */
+  #projects .btn {
+    font-size: 13px;
+    padding: 6px 12px;
+    margin: 6px 4px;
+    width: 100%;
+  }
+
+  /* Space between cards */
+  #projects .col-md-4 {
+    margin-bottom: 15px;
+  }
+
+}
+/* ===============================
+   Mobile Responsive - Contact
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Section padding */
+  #contact {
+    padding: 50px 15px;
+  }
+
+  /* Heading */
+  #contact h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  #contact h2 span {
+    font-size: 28px;
+  }
+
+  /* Subtitle text */
+  #contact .lead {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  /* Glass cards */
+  #contact .glass-card {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Contact titles */
+  #contact h5 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  /* Phone number */
+  #contact p.fs-5 {
+    font-size: 16px !important;
+  }
+
+  /* Email text */
+  #contact p.fs-6 {
+    font-size: 14.5px;
+    word-break: break-word;
+  }
+
+  /* Buttons */
+  #contact .btn {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  /* Form labels */
+  #contact .form-label {
+    font-size: 13px;
+  }
+
+  /* Form inputs */
+  #contact .form-control {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  /* Stack form buttons */
+  #contact .col-12.text-end {
+    text-align: center !important;
+  }
+
+  #contact button[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* Space between left cards */
+  #contact .col-md-5 .glass-card {
+    margin-bottom: 15px;
+  }
+
+}
+/* ===============================
+   Mobile Responsive - Footer
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Footer container */
+  .footer {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  /* Copyright text */
+  .footer p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  /* Social icons wrapper */
+  .footer .socialmedia {
+    margin-top: 10px;
+  }
+
+  /* Social links */
+  .footer .socialmedia a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin: 6px;
+  }
+
+  /* Icons size */
+  .footer .social-links {
+    font-size: 20px;
+  }
+
+}
+/* ===============================
+   Mobile Responsive - Hero Section
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Hero section spacing */
+  .hero {
+    padding: 60px 15px 50px;
+  }
+
+  /* Center content on mobile */
+  .hero-content {
+    text-align: center;
+  }
+
+  /* Main heading */
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .hero h1 span {
+    font-size: 30px;
+  }
+
+  /* Subtitle */
+  .hero .lead {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 8px;
+  }
+
+  /* Typed text line */
+  .typed-line {
+    font-size: 18px;
+  }
+
+  .typed-line span {
+    font-size: 18px;
+  }
+
+  /* Social icons */
+  .hero .socialmedia {
+    margin-top: 20px;
+  }
+
+  .hero .socialmedia a {
+    margin: 6px;
+  }
+
+  .hero .social-links {
+    font-size: 20px;
+  }
+
+  /* CTA section spacing */
+  .hero .container.mt-4 {
+    margin-top: 25px !important;
+  }
+
+  /* Download CV button */
+  .hero .btn {
+    font-size: 14px;
+    padding: 8px 18px;
+    width: 100%;
+  }
+
+  /* Phone box */
+  .phone-box {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .phone-icon {
+    font-size: 16px;
+    margin-right: 6px;
+  }
+
+  .phone-box .country,
+  .phone-box .number {
+    font-size: 14px;
+  }
+  .img-about{
+    width: 172px !important;
+    height: 172px !important;
+    border: 3px solid var(--primary);
+    object-fit: cover;
+  }
+  .image-margin{
+    margin-top: 20px !important;
+  }
+}
+/* ===============================
+   Mobile Responsive - About Me
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Section spacing */
+  .aboutme {
+    padding: 50px 15px;
+  }
+
+  /* Section heading */
+  .aboutme h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .aboutme h2 span {
+    font-size: 28px;
+  }
+
+  /* Card alignment */
+  .aboutme .glass-card {
+    padding: 20px;
+    text-align: left;
+  }
+
+  /* Role title (prevents awkward wrapping) */
+  .aboutme h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  /* Paragraph text */
+  .aboutme p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  /* Strong text readability */
+  .aboutme p strong {
+    font-size: 15px;
+  }
+
+  /* Final emphasis line */
+  .aboutme p.fw-semibold {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  /* Image spacing */
+  .aboutme .image-margin {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .aboutme h3::after {
+  content: "";
+  width: 48px;
+  height: 3px;
+  background: var(--primary);
+  display: block;
+  margin: 8px auto 0 !important; /* CENTERED */
+  border-radius: 2px;
+}
+
+}
