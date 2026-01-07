@@ -830,5 +830,129 @@ section span {
   margin: 8px auto 0 !important; /* CENTERED */
   border-radius: 2px;
 }
-
 }
+/* =========================================================
+   GLOBAL SPACING & ALIGNMENT ENHANCEMENTS
+   (Safe – No Layout Changes)
+========================================================= */
+
+/* Consistent vertical rhythm for all sections */
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Hero should feel slightly taller */
+header.hero {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+/* Tablet & mobile tuning */
+@media (max-width: 992px) {
+  section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  header.hero {
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  header.hero {
+    padding-top: 75px;
+    padding-bottom: 65px;
+  }
+}
+
+/* =========================================================
+   SECTION HEADINGS – CLEAN GAP
+========================================================= */
+section h2 {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  section h2 {
+    margin-bottom: 35px;
+  }
+}
+
+/* =========================================================
+   ROW & GRID SPACING (No column changes)
+========================================================= */
+.row {
+  row-gap: 28px;
+}
+
+/* Projects & skills need slightly more breathing space */
+.skills .row,
+.projects .row {
+  row-gap: 35px;
+}
+
+/* =========================================================
+   GLASS CARD VISUAL SEPARATION
+========================================================= */
+.glass-card {
+  margin-bottom: 20px;
+}
+
+.glass-card:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   ABOUT SECTION REFINEMENT
+========================================================= */
+.aboutme p {
+  margin-bottom: 14px;
+}
+
+.aboutme p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   SKILLS SECTION POLISH
+========================================================= */
+.skills .col-6,
+.skills .col-md-4 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* =========================================================
+   PROJECT CARD REFINEMENT
+========================================================= */
+.projects .glass-card {
+  padding-bottom: 26px;
+}
+
+.projects h5 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+/* =========================================================
+   CONTACT SECTION CLEANUP
+========================================================= */
+.contact .glass-card {
+  margin-bottom: 22px;
+}
+
+.contact .glass-card:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   FOOTER SPACING BALANCE
+========================================================= *
