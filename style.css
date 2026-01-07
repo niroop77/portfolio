@@ -221,8 +221,8 @@ section span {
 }
 
 .img-about {
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  height: auto;
   border: 3px solid var(--primary);
   object-fit: cover;
 }
@@ -406,11 +406,6 @@ section span {
 
   .glass-card {
     padding: 20px;
-  }
-
-  .img-about {
-    width: 180px !important;
-    height: 180px !important;
   }
 
   .phone-box {
@@ -761,12 +756,6 @@ section span {
   .phone-box .country,
   .phone-box .number {
     font-size: 14px;
-  }
-  .img-about{
-    width: 172px !important;
-    height: 172px !important;
-    border: 3px solid var(--primary);
-    object-fit: cover;
   }
   .image-margin{
     margin-top: 20px !important;
